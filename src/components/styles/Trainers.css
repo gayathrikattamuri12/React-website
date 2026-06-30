@@ -1,0 +1,57 @@
+.trainers {
+  padding: 70px 8% 110px;
+  text-align: center;
+}
+
+.trainer-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.trainer-card {
+  width: 260px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff6b00;
+}
+
+.trainer-img {
+  width: 100%;
+  border-radius: 12px;
+  height: 230px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.trainer-card h3 {
+  color: #ff6b00;
+  margin-bottom: 8px;
+}
+
+.trainer-card p {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .trainers {
+    padding: 60px 5% 90px;
+  }
+
+  .trainer-grid {
+    gap: 16px;
+  }
+
+  .trainer-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
